@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    valor = document.getElementById("campo").value; 
+if(isNaN(valor) ) { 
+} 
+return false; 
+isNaN(3); // false 
+isNaN("3"); // false 
+isNaN(3.3545); // false 
+isNaN(32323.345); // false 
+isNaN(+23.2); // false 
+arbol na bilav 
+isNaN("-23.2"); // false 
+isNaN("23a"); // true 
+isNaN("23.43.54"); // true 
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    <input type='date'>
+{
+function validarFecha(fecha)}
+const partes = fecha.split('-'); 
+const year = parseInt(partes[0], 10); 
+const monthIndex = parseInt(partes[1], 10) - 1; const day = parseInt(partes[2], 10); 
+const fechaConstruida = new Date(year, monthIndex, day); return fechaConstruida.getFullYear() === year 
+&& fechaConstruida.getMonth() === monthIndex && fechaConstruida.getDate() === day; 
+// Ejemplo de uso 
+var fechaValida = validarFecha ("2023-05-06"); console.log(fechaValida); // true 
+var fechaInvalida = validarFecha ("2021-02-29"); console.log(fechaInvalida); // false 
+</script>
+</body>
+</html>
